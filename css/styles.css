@@ -1,14 +1,244 @@
 body { 
     font-family: Arial, Helvetica, sans-serif;
-    color: #4b4b4b;
+    color: #3c3c3c;
     -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;
+    margin: 0;
 }
 
-.red {
+#header {
+  padding: 10px 6px;
+  height: 60px;
+  /*background-color: rgb(233, 66, 94,0.7)!important;*/
+}
+
+#wave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 62%;
+  z-index: -1;
+  filter: drop-shadow(0 0 0.3rem rgba(97, 97,97, 0.23));
+}
+
+.logo img {
+  float:left;
+  width: 90px;
+  padding: 10px;
+}
+
+
+.navbar-container{
+  float:right;
+}
+
+
+.item {
+  display: inline-block; 
+  padding:10px;
+  font-size:20px; 
+}
+
+.item a {
+  text-decoration: none;
+  color: white;
+}
+
+ .item a:hover{
+  border-bottom: 2px solid white;
+}
+
+.main
+
+#cta-wrapper {
+  display: flex;
+  /*background-color: rgb(233, 66, 94,0.9)!important;*/
+}
+
+.cta-container-left {
+  display: flex;
+  float: left;
+  flex: auto;
+  flex-direction: column;
+  /*margin: 50px;*/
+  padding: 50px;
+  /*border: 1px solid grey;*/
+  width: 50%;
+  text-align: left;
+  line-height: 1.2;
+  place-content: center;
+}
+
+.cta-title {
+  padding: 10px 0;
+  font-size: 2.5em;
+  color: #3c3c3c;
+  font-weight: bold;
+}
+
+.cta-paragraph {
+  padding: 10px 0;
+  font-size: 1.2em;
+  color: #898084;
+}
+
+.cta-container-right {
+  display: flex;
+  float: right;
+  flex: auto;
+  flex-direction: column;
+  margin: 50px;
+  padding: 10px;
+  /*border: 1px solid grey;*/
+  width: 50%;
+  text-align: left;
+}
+
+.iphone {
+  display: flex;
+  width: 100%;
+  height: auto;
+  transform: rotate(10deg);
+  filter: drop-shadow(0 0 0.3rem #898084);
+}
+
+
+#benefits  {
+  padding: 50px;
+  
+}
+.benefits-wrapper {
+  display: flex;
+  margin: 20px 0;
+}
+.title-container {
+  text-align: center;
+  font-size: 2.5em;
+  padding-bottom: 20px;
+  font-weight: bold;
+  
+}
+.benefit-container {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  text-align: center;
+  box-shadow: 0 4px 21px -5px rgba(97, 97,97, 0.23);
+  border-radius: 10px;
+  line-height: 1.2;
+  background-color: white;
+  }
+
+.benefit-container > div {
+  margin: 5px;
+}
+
+.icon {
+  object-position: center;
+  height: 50px;
+  
+}
+
+.benefit-title {
+  padding: 7px 0;
+  font-size: 1.2em;
   color: #e9425e;
 }
 
-.header {
+
+.benefit-text {
+font-size: .9em;
+}
+
+#feature-1 {
+  /*background: lightpink;*/
+  padding: 20px;
+  display: flex;
+}
+
+#feature-2 {
+  /*background: lightgray;*/
+  padding: 20px;
+  display: flex;
+}
+
+.features-wrapper {
+  display: flex;
+  flex: auto;
+  margin: 0 5%;
+}
+
+
+
+.feature-container-left > div, .feature-container-right > div {
+  margin: 5px;
+}
+
+
+.feature-container-left {
+  display: flex;
+  float: left;
+  flex: auto;
+  flex-direction: column;
+  margin-left: 50px;
+  padding: 10px;
+  /*border: 1px solid grey;*/
+  width: 50%;
+  text-align: right;
+  line-height: 1.2;
+
+}
+
+.image-wrapper {
+  /*background: #3c3c3c;*/
+  width: 50%;
+}
+
+.feature-image-right {
+  display: flex;
+  width: 50%;
+  height: auto;
+  margin: 5px;
+
+}
+
+.feature-image-left {
+  display: flex;
+  width: 70%;
+  height: auto;
+  margin: 5px;
+
+}
+
+.feature-container-right {
+  /*border: 1px solid grey;*/
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  float: right;
+  margin-right: 50px;
+  padding: 10px;
+  width: 50%;
+  text-align: left;
+  line-height: 1.2;
+
+}
+
+
+.feature-title {
+  padding: 7px 0;
+  font-size: 1.5em;
+  color: #e9425e;
+
+}
+
+.feature-text {
+  font-size: 1em;
+}
+
+/* .header {
    padding: 10px 0;
    padding-left: 4px;
    height: 50px;
@@ -64,17 +294,45 @@ body {
 .container {
     max-width: 1000px;
     height: 600px;
+} */
+
+#footer-wrapper {
+border-top: 1px solid #e9425e;
+padding: 40px;
+margin: 5px 0;
 }
 
-.footer {
-display: inline-block;
+.text-wrapper {
+  display: flex;
+  float: left;
+  position: relative;
+  bottom: 20px;
+}
 
+.footer-text {
+  font-size: 1.3em;
+  padding: 10px;
+}
 
+.some-wrapper {
+  display: flex;
+  float: right;
+  position: relative;
+  bottom: 20px;
+}
+
+.some-container {
+  padding: 10px;
+  display: block;
+  align-items: center;
+  
+
+  
 }
 
 .some {
-    float: right;
-    width: 50px;
-    height: 50px;
+  width: 25px;
+  height: auto;
 }
+
 

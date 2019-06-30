@@ -7,86 +7,89 @@
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-        <header class="header"> 
+
+        
+        <header id="header"> 
+                <div><img src="./img/Weird Shape-Vima.svg" id="wave"></div>
             <div class="logo">
                 <img src="./img/Vima_Logo.png">
             </div>
-            <nav class="nav-bar">
-                <ul>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+            <nav>
+                <ul class="navbar-container">
+                <li class="item"><a href="#">Join</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <div class="main">
-            <section id="cta-main" class="container">
-                <div class="cta">
-                    <h1 class="blue">This is dev branch</h1>
-                    <h1>The first video marketplace</h1>
-                    <p class="red">The first marketplace which allows users to buy and sell premium original video content.
+            <section id="cta-wrapper">
+                <div class="cta-container-left">
+                    <h1 class="cta-title">Lorem ipsum dolor </h1>
+                    <p class="cta-paragraph">The first marketplace which allows users to buy and sell premium original video content.
                        Watch the best from TV, Music, Courses and Individual Creators - completely FREE to sign up!</p>
-                    <p>This is q new text</p>
                 </div>
-                <figure class="iphone">
-                    <img class="mockup" src="./img/iphone.png">
-                </figure>
-            </section>
-            <section>
-                <div>
-                    <div>Benefits</div>
-                </div>
-                <div>
-                    <div>
-                        <div>icon</div>
-                        <div>benefit title</div>
-                        <div>dummy text explaining the benefits </div>
-                    </div>
-                    <div>
-                        <div>icon</div>
-                        <div>benefit title</div>
-                        <div>dummy text explaining the benefits </div>
-                    </div>
-                    <div>
-                        <div>icon</div>
-                        <div>benefit title</div>
-                        <div>dummy text explaining the benefits </div>
-                    </div>
+                <div class="cta-container-right">
+                    <figure><img class="iphone" src="./img/iphone.png"></figure>
                 </div>
             </section>
-           <section id="features">
-               <div>
-                   <div>imgage</div>
-                   <div>
-                       <div>text with a pink color</div>
-                       <div>h1 bold text with features name</div>
-                       <div>
+            <section id="benefits">
+                <div class="title-container">
+                    <h2>Benefits</h2>
+                </div>
+                <div class="benefits-wrapper">
+                    <div class="benefit-container">
+                        <div><img class="icon" src="./img/badge.png"></div>
+                        <div class="benefit-title">Premium content</div>
+                        <div class="benefit-text">dummy text explaining the benefits </div>
+                    </div>
+                    <div class="benefit-container">
+                        <div><img class="icon" src="./img/coin.png"></div>
+                        <div class="benefit-title">Pay per view</div>
+                        <div class="benefit-text">dummy text explaining the benefits </div>
+                    </div>
+                    <div class="benefit-container">
+                        <div><img class="icon" src="./img/user.png"></div>
+                        <div class="benefit-title">Content creators</div>
+                        <div class="benefit-text">dummy text explaining the benefits </div>
+                    </div>
+                </div>
+            </section>
+           <section id="feature-1">
+               <div class="features-wrapper">
+                   <div class="image-wrapper"><img class="feature-image-right" src="./img/146.jpg"></div>
+                   <div  class="feature-container-left">
+                       <div class="feature-title">Discover independant film</div>
+                       <div class="feature-text">
                            <p>paragraph explaing what is the feature for</p>
                            <p>paragraph describing the feature</p>
                        </div>
                    </div>
                </div>
-               <div>
-                   <div>
-                       <div>text with a pink color</div>
-                       <div>h1 bold text with features name</div>
-                       <div>
+            </section>
+            <section id="feature-2">
+               <div class="features-wrapper">
+                   <div class="feature-container-right">  
+                       <div class="feature-title">Another feature title</div>
+                       <div class="feature-text">
                            <p>paragraph explaing what is the feature for</p>
                            <p>paragraph describing the feature </p>
                        </div>
                    </div>
-                   <div>imgage</div>
+                   <div class="image-wrapper"><img class="feature-image-left" src="./img/untitled-3-01.jpg"></div>
                </div>
            </section>
 
          </div>   
-         <footer>
-             <h1>Get in touch. Say Hello!</h1>
-             
-                <div><img class="some" src="./img/instagram.png"></div>
-                <div><img  class="some" src="./img/facebook.png"></div>
-                <div><img  class="some" src="./img/twitter.png"></div>
-               
-         </footer>
+         <footer id="footer-wrapper">
+             <div class="text-wrapper">
+                 <p class="footer-text">Get in touch. Say Hello!</p>
+             </div>
+             <div class="some-wrapper">
+                <div class="some-container"><img  class="some" src="./img/instagram.png"></div>
+                <div class="some-container"><img  class="some" src="./img/facebook.png"></div>
+                <div class="some-container"><img  class="some" src="./img/twitter.png"></div>
+            </div>  
+            </footer>
     </body>
 </html>
