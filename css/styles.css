@@ -65,7 +65,7 @@ body {
   flex: auto;
   flex-direction: column;
   margin: 20px;
-
+  margin-right: 200px;
   /*border: 1px solid grey;*/
   width: 100%;
   text-align: left;
@@ -112,6 +112,7 @@ place-items: right;
 .iphone {
   display: flex;
   width: 100%;
+  min-width: 100px;
   height: auto;
   /*transform: rotate(10deg);*/
   filter: drop-shadow(0 0 0.3rem #898084);
