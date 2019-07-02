@@ -36,18 +36,17 @@ body {
 }
 
 
-.item {
+.nav-item {
   display: inline-block; 
-  padding:10px;
   font-size:20px; 
 }
 
-.item a {
+.nav-item a {
   text-decoration: none;
   color: white;
 }
 
- .item a:hover{
+ .nav-item a:hover{
   border-bottom: 2px solid white;
 }
 
@@ -111,13 +110,21 @@ place-items: right;
 
 .iphone {
   display: flex;
-  width: 100%;
-  min-width: 100px;
-  height: auto;
+  width: 50%;
+  
+  /*height: auto;*/
   /*transform: rotate(10deg);*/
   filter: drop-shadow(0 0 0.3rem #898084);
 }
 
+/*@media (min-width: 576px) { 
+  .iphone {
+    display: flex;
+    width: 50%;
+    
+    filter: drop-shadow(0 0 0.3rem #898084);
+
+}*/
 
 #benefits  {
   padding: 50px;
@@ -228,12 +235,13 @@ padding: 7px 0;
   color: #e9425e;
   font-size: 2.3em;
   font-weight: bold;
-
+  text-align: right;
 }
 
 .feature-text {
   padding: 10px 0;
   font-size: 1.2em;
+  text-align: right;
 }
 
 /* .header {
