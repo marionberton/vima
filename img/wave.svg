@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2135px" height="684px" viewBox="0 0 2135 684" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>wave</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="96.748656%" y1="46.0377162%" x2="19.9482818%" y2="52.4939881%" id="linearGradient-1">
+            <stop stop-color="#FF4242" offset="0%"></stop>
+            <stop stop-color="#FF0CA9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.771949405">
+        <path d="M0,2.27373675e-13 L1769.73594,2.27373675e-13 C2132.10358,104.834772 2224.85058,220.972582 2047.97694,348.413432 C1782.66648,539.574707 1373.35104,375.287752 1108.35594,569.521402 C931.692541,699.010502 562.240561,718.648761 0,628.43618 L0,2.27373675e-13 Z" id="wave" fill="url(#linearGradient-1)" transform="translate(1067.500000, 342.000000) scale(-1, 1) rotate(180.000000) translate(-1067.500000, -342.000000) "></path>
+    </g>
+</svg>

@@ -18,12 +18,15 @@ body {
   right: 0;
   width: 62%;
   z-index: -1;
-  filter: drop-shadow(0 0 0.3rem rgba(97, 97,97, 0.23));
+  filter: drop-shadow(50px 20px rgb(238, 133, 140, 0.3));
+  
 }
+
+
 
 .logo img {
   float:left;
-  width: 10%;
+  width: 90px;
   padding: 10px;
 }
 
@@ -48,11 +51,12 @@ body {
   border-bottom: 2px solid white;
 }
 
-.main
+
 
 #cta-wrapper {
   display: flex;
   /*background-color: rgb(233, 66, 94,0.9)!important;*/
+  padding: 50px;
 }
 
 .cta-container-left {
@@ -60,10 +64,10 @@ body {
   float: left;
   flex: auto;
   flex-direction: column;
-  /*margin: 50px;*/
-  padding: 50px;
+  margin: 20px;
+
   /*border: 1px solid grey;*/
-  width: 50%;
+  width: 100%;
   text-align: left;
   line-height: 1.2;
   place-content: center;
@@ -80,25 +84,36 @@ body {
   padding: 10px 0;
   font-size: 1.2em;
   color: #898084;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  padding: 12px;
+  border-radius: 20px;
+  width: 50%;
+  background-color: #e9425e;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 0 4px 21px -5px rgb(233, 66, 94, 0.8);
+  margin-top: 10px;
+  border: none;
 }
 
 .cta-container-right {
   display: flex;
   float: right;
-  flex: auto;
-  flex-direction: column;
-  margin: 50px;
-  padding: 10px;
+  margin: 20px;
   /*border: 1px solid grey;*/
-  width: 50%;
-  text-align: left;
+  width: 100%;
+place-items: right;
 }
 
 .iphone {
   display: flex;
   width: 100%;
   height: auto;
-  transform: rotate(10deg);
+  /*transform: rotate(10deg);*/
   filter: drop-shadow(0 0 0.3rem #898084);
 }
 
@@ -121,6 +136,7 @@ body {
 .benefit-container {
   margin: 20px;
   padding: 10px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   flex: auto;
@@ -135,46 +151,46 @@ body {
   margin: 5px;
 }
 
+
+
+
 .icon {
+  height: 35px;
   object-position: center;
-  height: 50px;
-  
+  filter: drop-shadow(5px 5px rgb(238, 133, 140, 0.3));
 }
 
 .benefit-title {
   padding: 7px 0;
   font-size: 1.2em;
-  color: #e9425e;
+  color: #3c3c3c;
 }
 
 
 .benefit-text {
 font-size: .9em;
+color: #898084;
+padding: 7px 0;
 }
 
-#feature-1 {
+#feature {
   /*background: lightpink;*/
-  padding: 20px;
+  padding: 50px;
   display: flex;
 }
 
-#feature-2 {
-  /*background: lightgray;*/
-  padding: 20px;
-  display: flex;
-}
+
 
 .features-wrapper {
   display: flex;
   flex: auto;
-  margin: 0 5%;
 }
 
 
 
-.feature-container-left > div, .feature-container-right > div {
+/*.feature-container-left > div, .feature-container-right > div {
   margin: 5px;
-}
+}*/
 
 
 .feature-container-left {
@@ -182,60 +198,41 @@ font-size: .9em;
   float: left;
   flex: auto;
   flex-direction: column;
-  margin-left: 50px;
-  padding: 10px;
+  margin: 20px;
   /*border: 1px solid grey;*/
-  width: 50%;
+  width: 100%;
   text-align: right;
   line-height: 1.2;
+  place-content: center;
 
 }
 
 .image-wrapper {
   /*background: #3c3c3c;*/
-  width: 50%;
+  width: 100%;
+  margin: 20px;
 }
 
 .feature-image-right {
   display: flex;
-  width: 50%;
+  width: 100%;
   height: auto;
-  margin: 5px;
-
-}
-
-.feature-image-left {
-  display: flex;
-  width: 70%;
-  height: auto;
-  margin: 5px;
-
-}
-
-.feature-container-right {
-  /*border: 1px solid grey;*/
-  display: flex;
-  flex-direction: column;
-  flex: auto;
-  float: right;
-  margin-right: 50px;
-  padding: 10px;
-  width: 50%;
-  text-align: left;
-  line-height: 1.2;
+  
 
 }
 
 
 .feature-title {
-  padding: 7px 0;
-  font-size: 1.5em;
+  padding: 10px 0;
   color: #e9425e;
+  font-size: 2.3em;
+  font-weight: bold;
 
 }
 
 .feature-text {
-  font-size: 1em;
+  padding: 10px 0;
+  font-size: 1.2em;
 }
 
 /* .header {
@@ -297,16 +294,14 @@ font-size: .9em;
 } */
 
 #footer-wrapper {
-border-top: 1px solid #e9425e;
-padding: 40px;
-margin: 5px 0;
+  padding: 10px 6px;
+  height: 60px;
 }
+
 
 .text-wrapper {
   display: flex;
   float: left;
-  position: relative;
-  bottom: 20px;
 }
 
 .footer-text {
@@ -317,8 +312,7 @@ margin: 5px 0;
 .some-wrapper {
   display: flex;
   float: right;
-  position: relative;
-  bottom: 20px;
+  
 }
 
 .some-container {
@@ -326,13 +320,17 @@ margin: 5px 0;
   display: block;
   align-items: center;
   
-
-  
 }
 
 .some {
   width: 25px;
   height: auto;
 }
+
+
+
+
+
+
 
 
