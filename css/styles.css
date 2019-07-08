@@ -9,6 +9,7 @@ body {
 #header {
   padding: 10px 6px;
   height: 60px;
+
   /*background-color: rgb(233, 66, 94,0.7)!important;*/
 }
 
@@ -31,9 +32,9 @@ body {
 }
 
 
-.navbar-container{
+/*.navbar-container{
   float:right;
-}
+}*/
 
 
 .nav-item {
@@ -52,9 +53,9 @@ body {
 
 
 
-#cta-wrapper {
+/*#cta-wrapper {
   display: flex;
-  /*background-color: rgb(233, 66, 94,0.9)!important;*/
+  background-color: rgb(233, 66, 94,0.9)!important;
   padding: 50px;
 }
 
@@ -65,15 +66,15 @@ body {
   flex-direction: column;
   margin: 20px;
   margin-right: 200px;
-  /*border: 1px solid grey;*/
+  border: 1px solid grey;
   width: 100%;
   text-align: left;
   line-height: 1.2;
   place-content: center;
-}
+}*/
 
 .cta-title {
-  padding: 10px 0;
+  
   font-size: 2.5em;
   color: #3c3c3c;
   font-weight: bold;
@@ -99,18 +100,18 @@ body {
   border: none;
 }
 
-.cta-container-right {
+/*.cta-container-right {
   display: flex;
   float: right;
   margin: 20px;
-  /*border: 1px solid grey;*/
+  /*border: 1px solid grey;
   width: 100%;
 place-items: right;
-}
+}*/
 
 .iphone {
-  display: flex;
-  width: 50%;
+  /*display: flex;*/
+  width: 60%;
   
   /*height: auto;*/
   /*transform: rotate(10deg);*/
@@ -126,28 +127,27 @@ place-items: right;
 
 }*/
 
-#benefits  {
+/*#benefits  {
   padding: 50px;
   
 }
+
 .benefits-wrapper {
   display: flex;
   margin: 20px 0;
-}
-.title-container {
-  text-align: center;
-  font-size: 2.5em;
-  padding-bottom: 20px;
-  font-weight: bold;
+
+}*/
+
+.benefits {
   
+  font-size: 2.1em;
+  font-weight: bold;
 }
+
 .benefit-container {
-  margin: 20px;
+  
   padding: 10px;
-  padding-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  flex: auto;
+  /*padding-bottom: 30px;*/
   text-align: center;
   box-shadow: 0 4px 21px -5px rgba(97, 97,97, 0.23);
   border-radius: 10px;
@@ -155,11 +155,9 @@ place-items: right;
   background-color: white;
   }
 
-.benefit-container > div {
-  margin: 5px;
-}
-
-
+  .benefit-container > div {
+    margin: 5px;
+  }
 
 
 .icon {
@@ -181,18 +179,18 @@ color: #898084;
 padding: 7px 0;
 }
 
-#feature {
-  /*background: lightpink;*/
+/*#feature {
+  background: lightpink;
   padding: 50px;
   display: flex;
-}
+}*/
 
 
 
-.features-wrapper {
+/*.features-wrapper {
   display: flex;
   flex: auto;
-}
+}*/
 
 
 
@@ -202,10 +200,10 @@ padding: 7px 0;
 
 
 .feature-container-left {
-  display: flex;
+  /*display: flex;
   float: left;
   flex: auto;
-  flex-direction: column;
+  flex-direction: column;*/
   margin: 20px;
   /*border: 1px solid grey;*/
   width: 100%;
@@ -215,23 +213,21 @@ padding: 7px 0;
 
 }
 
-.image-wrapper {
-  /*background: #3c3c3c;*/
+/*.image-wrapper {
+  background: #3c3c3c;
   width: 100%;
   margin: 20px;
-}
+}*/
 
 .feature-image-right {
-  display: flex;
+  /*display: flex;*/
   width: 100%;
   height: auto;
-  
-
 }
 
 
 .feature-title {
-  padding: 10px 0;
+  /*padding: 10px 0;*/
   color: #e9425e;
   font-size: 2.3em;
   font-weight: bold;
@@ -239,79 +235,22 @@ padding: 7px 0;
 }
 
 .feature-text {
-  padding: 10px 0;
+  /*padding: 10px 0;*/
   font-size: 1.2em;
   text-align: right;
 }
 
-/* .header {
-   padding: 10px 0;
-   padding-left: 4px;
-   height: 50px;
-  }
-  
-  nav {
-      float:right;
 
-    }
-  
-  .logo img {
-      float:left;
-      width: 90px;
-    
-    }
-  
-  ul li{
-    display: inline-block; 
-    padding:10px;
-    font-size:20px; 
-  }
-
-  a {
-      text-decoration: none;
-      color: #4b4b4b;
-  }
-  
-  a:hover{
-    border-bottom: 2px solid #e9425e;
-  }
-
-.main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.blue {
-  color: blue;
-}
-
-.cta, .iphone {
-  display: inline-block;
-  width: 400px;
-  height: 600px;
-  margin: 1px;
-}
-
-.mockup {
-
-    transform: rotate(10deg);
-}
-.container {
-    max-width: 1000px;
-    height: 600px;
-} */
-
-#footer-wrapper {
+/*#footer-wrapper {
   padding: 10px 6px;
   height: 60px;
-}
+}*/
 
 
-.text-wrapper {
+/*.text-wrapper {
   display: flex;
   float: left;
-}
+}*/
 
 .footer-text {
   font-size: 1.3em;
@@ -321,14 +260,12 @@ padding: 7px 0;
 .some-wrapper {
   display: flex;
   float: right;
-  
 }
 
 .some-container {
   padding: 10px;
   display: block;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 .some {
