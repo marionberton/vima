@@ -4,81 +4,75 @@
         <title>Vima</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/bootstrap.css">
         <link rel="stylesheet" href="./css/styles.css">
     </head>
-    <body>
-        <div class="container-fluid">
-            <header id="header"> 
+    <body> 
+      <div class="main">
+        <header id="header"> 
                 <div><img src="./img/Weird Shape-Vima.svg" id="wave"></div>
             <div class="logo">
                 <img src="./img/Vima_Logo.png">
             </div>
             <nav>
-                <ul class="nav justify-content-end">
-                <li class="nav-item"><a class="nav-link" href="#">Join</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <ul class="navbar-container">
+                <li class="item"><a href="#">Join</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            </header>
-            <div class="row justify-content-center my-5">
-                <div class="col-sm-5 d-flex align-content-center flex-wrap">
+        </header>
+            <section id="cta-wrapper">
+                <div class="cta-container-left">
                     <h1 class="cta-title">Lorem ipsum dolor sit amet consectetur</h1>
                     <p class="cta-paragraph">Laudantium nemo deserunt officiis, saepe voluptas quibusdam ipsam accusamus quisquam exercitationem?</p>
                     <button class="cta-button" type="button">Submit</button>
                 </div>
-                <div class="col-sm-5 d-flex align-self-center">
-                    <figure><img class="iphone" srcset="./img/iphone.png 2x" alt="…"></figure>
+                <div class="cta-container-right">
+                  <!----  <figure><img class="iphone" srcset="./img/iphone.png"></figure>-->
                 </div>
-            </div>
-            <div class="row justify-content-center my-5 py-1" >
-                <div>
-                    <h2 class="benefits">Benefits</h2>
+            </section>
+            <section id="benefits">
+                <div class="title-container">
+                  <h2>Benefits</h2>
                 </div>
-            </div>
-            <div class="row justify-content-center my-5">
-                <div class="col-sm-3 d-flex flex-column m-auto pb-4 benefit-container">
-                    <div class="icon-container"><img class="icon" src="./img/icon.png"></div>
-                    <div class="benefit-title">Premium content</div>
-                    <div class="benefit-text">dummy text explaining the benefits </div>
+                <div class="benefits-wrapper">
+                    <div class="benefit-container">
+                        <div class="icon-container"><img class="icon" src="./img/icon.png"></div>
+                        <div class="benefit-title">Premium content</div>
+                        <div class="benefit-text">dummy text explaining the benefits </div>
+                    </div>
+                    <div class="benefit-container">
+                        <div class="icon-container"><img class="icon" src="./img/icon.png"></div>
+                        <div class="benefit-title">Pay per view</div>
+                        <div class="benefit-text">dummy text explaining the benefits </div>
+                    </div>
+                    <div class="benefit-container">
+                        <div class="icon-container"><img class="icon" src="./img/icon.png"></div>
+                        <div class="benefit-title">Content creators</div>
+                        <div class="benefit-text">dummy text explaining the benefits </div>
+                    </div>
                 </div>
-                <div class="col-sm-3 d-flex flex-column m-auto pb-4 benefit-container">
-                    <div class="icon-container"><img class="icon" src="./img/icon.png"></div>
-                    <div class="benefit-title">Pay per view</div>
-                    <div class="benefit-text">dummy text explaining the benefits </div>
-                </div>
-                <div class="col-sm-3 d-flex flex-column m-auto pb-4 benefit-container">
-                    <div class="icon-container"><img class="icon" src="./img/icon.png"></div>
-                    <div class="benefit-title">Content creators</div>
-                    <div class="benefit-text">dummy text explaining the benefits </div>
-                </div>
-            </div>
-            <div class="row justify-content-center my-5">
-                <div class="col-4">
-                    <img class="d-flex align-self-center feature-image-right" src="./img/146.jpg">
-                </div>
-                <div class="col-6 d-flex justify-content-end align-content-center flex-wrap">
-                    <h2 class="feature-title">Discover independant film</h2>
-                    <p class="feature-text">paragraph explaing what is the feature for</p>
-                    <p class="feature-text">paragraph describing the feature</p>  
-                </div>
-            </div>
-            <footer class="footer mt-auto py-3">
-                <div class="text-wrapper">
-                    <p class="footer-text">Get in touch. Say Hello!</p>
-                </div>
-                <div class="some-wrapper">
-                   <div class="some-container"><img  class="some" src="./img/instagram.png"></div>
-                   <div class="some-container"><img  class="some" src="./img/facebook.png"></div>
-                   <div class="some-container"><img  class="some" src="./img/twitter.png"></div>
-               </div>  
-            </footer>
-
-        </div>
-
-            
-    
-        
+            </section>
+           <section id="feature">
+               <div class="features-wrapper">
+                   <img class="feature-image-right" src="./img/iphone.png">
+                   <div  class="feature-container-left">
+                       <h2 class="feature-title">Discover independant film</h2>
+                         <p class="feature-text">paragraph explaing what is the feature for</p>
+                         <p class="feature-text">paragraph describing the feature</p>
+                   </div>
+               </div>
+            </section>
+        <footer id="footer-wrapper">
+             <div class="text-wrapper">
+                 <p class="footer-text">Get in touch. Say Hello!</p>
+             </div>
+             <div class="some-wrapper">
+                <div class="some-container"><img  class="some" src="./img/instagram.png"></div>
+                <div class="some-container"><img  class="some" src="./img/facebook.png"></div>
+                <div class="some-container"><img  class="some" src="./img/twitter.png"></div>
+            </div>  
+        </footer>
+      </div>
     </body>
 </html>
