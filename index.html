@@ -7,30 +7,58 @@
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body> 
-      <div class="main">
-        <header id="header"> 
-                <div><img src="./img/Weird Shape-Vima.svg" id="wave"></div>
-            <div class="logo">
-                <img src="./img/Vima_Logo.png">
+        <header id="header">
+                <img src="./img/Weird Shape-Vima.svg" id="wave">
+              <nav class="nav-top">
+                  <div class="nav-top-wrap">
+                      <div class="nav-top-left">
+                        <img id="vima-logo" src="./img/Vima_Logo.png">
+                      </div>
+                      <div class="nav-top-right-mobile"> 
+                        <span>MENU</span>
+                      </div>
+                  </div>
+                  <div class="nav-top-right">
+                    <ul class="nav-top-list">
+                        <li class="menu-item"><a href="#" class="current">Home</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">About</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Join</a></li>
+                    </ul>
+                  </div>
+              </nav>
+               <!--- <img src="./img/Weird Shape-Vima.svg" id="wave">-->
+           <!-- <div class="logo">
+                <img id="vima-logo" src="./img/Vima_Logo.png">
             </div>
-            <nav>
-                <ul class="navbar-container">
-                <li class="item"><a href="#">Join</a></li>
-                <li class="item"><a href="#">About</a></li>
-                <li class="item"><a href="#">Contact</a></li>
+            <nav class="menu">
+                <div id="menu-icon"> 
+                    <span class="text" >MENU</span>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#" class="current">Home</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">About</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">Join</a></li>
                 </ul>
-            </nav>
+            </nav>  -->    
         </header>
+        <main class="main-container">
             <section id="cta-wrapper">
-                <div class="cta-container-left">
+                <!---- <div class="cta-container-left">-->
                     <h1 class="cta-title">Lorem ipsum dolor sit amet consectetur</h1>
                     <p class="cta-paragraph">Laudantium nemo deserunt officiis, saepe voluptas quibusdam ipsam accusamus quisquam exercitationem?</p>
                     <button class="cta-button" type="button">Submit</button>
-                </div>
-                <div class="cta-container-right">
-                  <!----  <figure><img class="iphone" srcset="./img/iphone.png"></figure>-->
-                </div>
+                <!----</div>-->
+                 <!---- <div class="cta-container-right">
+                   <figure><img class="iphone" srcset="./img/iphone.png"></figure>
+                </div>-->
             </section>
+            <div class="device">
+                <figure>
+                    <img srcset="./img/iphone.png" alt="The Vima app on a black Iphone">
+                </figure>
+            </div>
             <section id="benefits">
                 <div class="title-container">
                   <h2>Benefits</h2>
@@ -53,16 +81,16 @@
                     </div>
                 </div>
             </section>
-           <section id="feature">
-               <div class="features-wrapper">
-                   <img class="feature-image-right" src="./img/iphone.png">
-                   <div  class="feature-container-left">
-                       <h2 class="feature-title">Discover independant film</h2>
-                         <p class="feature-text">paragraph explaing what is the feature for</p>
-                         <p class="feature-text">paragraph describing the feature</p>
-                   </div>
-               </div>
+            <section id="feature-wrapper">   
+                <h2 class="feature-title">Discover independant film</h2>
+                <p class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero consequatur ex dicta pariatur quibusdam, culpa sae.</p>
             </section>
+            <!--<div class="device">
+                <figure<>
+                   <img class="feature-image-right" src="./img/iphone.png">
+                </figure>
+            </div>-->
+      </main>
         <footer id="footer-wrapper">
              <div class="text-wrapper">
                  <p class="footer-text">Get in touch. Say Hello!</p>
@@ -73,6 +101,5 @@
                 <div class="some-container"><img  class="some" src="./img/twitter.png"></div>
             </div>  
         </footer>
-      </div>
     </body>
 </html>

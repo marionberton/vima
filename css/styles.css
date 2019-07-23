@@ -1,116 +1,198 @@
+/*MAIN*/
 body { 
   font-family: Arial, Helvetica, sans-serif;
   color: #3c3c3c;
   -webkit-font-smoothing: antialiased;
-  background-color: #ffffff;
-  margin: 0;
+  font-size: 1.05em;	
 }
 
-/*.main {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-areas:
-    "header   header   header"
-    "cta      cta      cta"
-    "benefits benefits benefits"
-    "feature  feature  feature"
-    "footer     footer    footer"
-}*/
+.nav-top {
+  margin: 0 auto;
+  max-width: 1660px;
+}
+.nav-top-right-mobile span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
 
-#header {
-padding: 10px 6px;
-height: 60px;
-/*background-color: rgb(233, 66, 94,0.7)!important;*/
+.nav-top ul {
+  margin: 0;
+  list-style: none;
+}
+
+.nav-top li {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.nav-top-right {
+
+}
+
+/*IPAD*/
+@media only screen and (max-width : 768px) {
+.nav-top-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.04762em;
+  
+}
+
+.nav-top-left {
+  position: relative;
+  margin-left: 0;
+  margin-right: auto;
+  overflow: hidden;
+  height: 2.3em;
+}
+#vima-logo {
+  width: 100px;
+}
+
+.nav-top-right-mobile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.nav-top-list {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.nav-top-right li {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.benefits-wrapper {
+  display: flex;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  }
 }
 
 #wave {
-position: absolute;
-top: 0;
-right: 0;
-width: 62%;
-z-index: -1;
-filter: drop-shadow(50px 20px rgb(238, 133, 140, 0.3));
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 62%;
+  z-index: -1;
+  filter: drop-shadow(50px 20px rgb(238, 133, 140, 0.3));
+  }
 
+
+
+#vima-logo {
+  /*width: 100px;
+  
+  /*float:left;
+  width: 90px;
+  padding: 10px;*/
 }
 
 
+/*.navbar-container{
+/*float:right;
 
-.logo img {
-float:left;
-width: 90px;
-padding: 10px;
-}
-
-
-.navbar-container{
-float:right;
 }
 
 
 .item {
-display: inline-block; 
+  
+ 
+/*display: inline-block; 
 padding:10px;
 font-size:20px; 
 }
 
-.item a {
+.item  {
 text-decoration: none;
 color: white;
 }
 
-.item a:hover{
+.item:hover{
+padding-bottom: 2px;
 border-bottom: 2px solid white;
+}*/
+
+.main-container {
+  max-width: 1085px;
+  margin: 0 auto;
+  padding: 2em 1em;
 }
 
+main {
+  display: flex;
+  flex-flow: column;
+}
 
+figure{
+  text-align: center;
+}
+
+figure img {
+  margin: 3em auto 0;
+  width: 235px;
+}
 
 #cta-wrapper {
-display: flex;
-/*background-color: rgb(233, 66, 94,0.9)!important;*/
-padding: 50px;
+
+text-align: center;
+/*background-color: rgb(233, 66, 94,0.9)!important;
+padding: 50px;*/
 }
 
-.cta-container-left {
+.cta-title {
+  font-size: 2.9em;
+  color: #3c3c3c;
+  margin: 1em;
+  font-weight: 700;
+  line-height: 1.25em;
+}
+  
+  .cta-paragraph {
+  font-size: 1.8em;
+  color: #898084;
+  margin: 1em;
+  line-height: 1.2em;
+  }
+  
+  .cta-button {
+    padding: 15px;
+    border-radius: 50px;
+    width: 30%;
+    background-color: #e9425e;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 600;
+    box-shadow: 0 4px 21px -5px rgb(233, 66, 94, 0.8);
+    margin-top: 3em;
+    margin-bottom: 1em;
+    border: none;
+  }
+
+/*.cta-container-left {
 display: flex;
 float: left;
 flex: auto;
 flex-direction: column;
 margin: 20px;
 
-/*border: 1px solid grey;*/
+/*border: 1px solid grey;
 width: 100%;
 text-align: left;
 line-height: 1.2;
 place-content: center;
 }
 
-.cta-title {
-padding: 10px 0;
-font-size: 2.5em;
-color: #3c3c3c;
-font-weight: bold;
-}
 
-.cta-paragraph {
-padding: 10px 0;
-font-size: 1.2em;
-color: #898084;
-margin-bottom: 10px;
-}
-
-.cta-button {
-padding: 12px;
-border-radius: 20px;
-width: 50%;
-background-color: #e9425e;
-color: white;
-font-size: 1em;
-font-weight: bold;
-box-shadow: 0 4px 21px -5px rgb(233, 66, 94, 0.8);
-margin-top: 10px;
-border: none;
-}
 
 .cta-container-right {
 display: flex;
@@ -130,18 +212,17 @@ filter: drop-shadow(0 0 0.3rem #898084);
 
 
 #benefits  {
-padding: 50px;
-
+margin-top: 3em;
 }
 .benefits-wrapper {
 display: flex;
-margin: 20px 0;
+margin: 2em 0;
 }
 .title-container {
-text-align: center;
-font-size: 2.5em;
-padding-bottom: 20px;
-font-weight: bold;
+  text-align: center;
+  font-size: 2.85em;
+  font-weight: 700;
+  color: #3c3c3c;
 
 }
 .benefit-container {
@@ -173,30 +254,23 @@ filter: drop-shadow(5px 5px rgb(238, 133, 140, 0.3));
 
 .benefit-title {
 padding: 7px 0;
-font-size: 1.2em;
-color: #3c3c3c;
+font-size: 1.7em;
+font-weight: 540;
+color: #4b4b4b;
 }
 
 
 .benefit-text {
-font-size: .9em;
+font-size: 1.3em;
 color: #898084;
 padding: 7px 0;
 }
 
-#feature {
-/*background: lightpink;*/
-display: grid;
-grid-template-columns: 1fr;
-padding: 50px;
-}
 
 
-.features-wrapper {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  grid-gap: 10px;
-  align-items: center;
+
+#feature-wrapper{
+  text-align: center;
 }
 
 
@@ -206,9 +280,7 @@ margin: 5px;
 }*/
 
 
-.feature-container-left {
- justify-self: end;
-}
+
 
 /*display: flex;
 float: left;
@@ -228,26 +300,21 @@ place-content: center center;
   width: auto;
 }*/
 
-.feature-image-right {
-width: 100%;
 
-}
-
-.feature-container-left {
-
-}
 
 .feature-title {
 padding: 10px 0;
 color: #e9425e;
-font-size: 2.3em;
-font-weight: bold;
+font-size: 2.85em;
+  font-weight: 700;
 
 }
 
 .feature-text {
-padding: 10px 0;
-font-size: 1.2em;
+  font-size: 1.8em;
+  color: #898084;
+  margin: 1em;
+  line-height: 1.2em;
 }
 
 /* .header {
@@ -302,35 +369,39 @@ margin: 1px;
 } */
 
 #footer-wrapper {
-padding: 10px 6px;
-height: 60px;
+  margin-top: 2em;
+  text-align: center;
+  background: rgb(226, 223, 225, 0.5)
 }
-
-
+#ada6a9
 .text-wrapper {
-display: flex;
-float: left;
+margin: 1em 0;
+
 }
 
 .footer-text {
-font-size: 1.3em;
-padding: 10px;
+  font-size: 2.2em;
+  padding: 10px;
+  color: #3c3c3c;
+  font-weight: 500;
+  padding-top: 30px;
 }
 
 .some-wrapper {
-display: flex;
-float: right;
-
+  display: flex;
+  /* float: right; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  padding-bottom: 30px;
 }
 
 .some-container {
-padding: 10px;
-display: block;
-align-items: center;
+
 
 }
 
 .some {
-width: 25px;
+width: 20%;
 height: auto;
-}
+} 
