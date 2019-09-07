@@ -3,17 +3,36 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #3c3c3c;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.05em;	
+  font-size: 1em;
+  margin: 0;
+  padding: 0;	
+}
+/*Font */
+.title {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #364F6B;
 }
 
-.nav-top {
-  margin: 0 auto;
-  max-width: 1660px;
+h1.title {
+  color: white;
 }
-.nav-top-right-mobile span {
+
+.nav-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+span {
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
+  color: white;
 }
 
 .nav-top ul {
@@ -21,387 +40,582 @@ body {
   list-style: none;
 }
 
-.nav-top li {
-  opacity: 1;
-  transform: matrix(1, 0, 0, 1, 0, 0);
-}
-.nav-top-right {
 
-}
-
-/*IPAD*/
-@media only screen and (max-width : 768px) {
-.nav-top-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.04762em;
-  
-}
-
-.nav-top-left {
+.nav-top-left-mobile {
   position: relative;
   margin-left: 0;
   margin-right: auto;
   overflow: hidden;
-  height: 2.3em;
+  height: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #vima-logo {
-  width: 100px;
+  display: none;
+}
+
+#logowhite {
+  width: 90px;
 }
 
 .nav-top-right-mobile {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
   cursor: pointer;
+  position: relative;
+  right: 0;
+  z-index: 2;
+  font-weight: 700;
+  margin-right: 0;
+  margin-left: auto;
+  height: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav-top-list {
+  position: fixed;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
+  background: #ffffff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  visibility: hidden;
 }
-
-.nav-top-right li {
+.nav-top-list-open {
+  visibility: visible;
+}
+.nav-top-list li {
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-color: #ffffff;
 }
 
-.benefits-wrapper {
-  display: flex;
-  margin: 20px 0;
-  flex-wrap: wrap;
+ .current, .menu-link {
+  text-decoration: none;
+  color: #e9425e;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+nav.nav-top-desktop {
+display: none;
+}
+
+
+  #wave {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    filter: drop-shadow(50px 20px rgb(238, 133, 140, 0.3));
+    }
+
+  #shape2 {
+    display: none;
   }
-}
-
-#wave {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 62%;
-  z-index: -1;
-  filter: drop-shadow(50px 20px rgb(238, 133, 140, 0.3));
-  }
 
 
 
-#vima-logo {
-  /*width: 100px;
-  
-  /*float:left;
-  width: 90px;
-  padding: 10px;*/
-}
-
-
-/*.navbar-container{
-/*float:right;
-
-}
-
-
-.item {
-  
- 
-/*display: inline-block; 
-padding:10px;
-font-size:20px; 
-}
-
-.item  {
-text-decoration: none;
-color: white;
-}
-
-.item:hover{
-padding-bottom: 2px;
-border-bottom: 2px solid white;
-}*/
-
-.main-container {
-  max-width: 1085px;
+.content{
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 0 40px;
+  
 }
 
-main {
-  display: flex;
-  flex-flow: column;
-}
+
+
+
+
+
 
 figure{
   text-align: center;
 }
 
-figure img {
-  margin: 3em auto 0;
-  width: 235px;
+.device {
+
+  width: 400px;
+  max-width: 100%;
 }
 
 #cta-wrapper {
-
 text-align: center;
-/*background-color: rgb(233, 66, 94,0.9)!important;
-padding: 50px;*/
+margin-top: 3rem;
 }
 
-.cta-title {
-  font-size: 2.9em;
-  color: #3c3c3c;
-  margin: 1em;
-  font-weight: 700;
-  line-height: 1.25em;
+
+.cta-intro {
+  color: white;
 }
+
   
   .cta-paragraph {
-  font-size: 1.8em;
-  color: #898084;
-  margin: 1em;
-  line-height: 1.2em;
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.2;
+  }
+  form {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width:300px;
+    margin: 1rem auto;
   }
   
-  .cta-button {
-    padding: 15px;
-    border-radius: 50px;
-    width: 30%;
-    background-color: #e9425e;
-    color: white;
-    font-size: 1.25em;
-    font-weight: 600;
-    box-shadow: 0 4px 21px -5px rgb(233, 66, 94, 0.8);
-    margin-top: 3em;
-    margin-bottom: 1em;
-    border: none;
+  .form-item, .form-button {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-input, .button  {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    border: 0;
   }
 
-/*.cta-container-left {
-display: flex;
-float: left;
-flex: auto;
-flex-direction: column;
-margin: 20px;
+.form-input {
+    padding: 1.5em;
+  }
 
-/*border: 1px solid grey;
-width: 100%;
-text-align: left;
-line-height: 1.2;
-place-content: center;
+.form-input:focus::placeholder {
+    color: #ea4b6b;
+  }
+
+.form-item {
+ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-
-
-.cta-container-right {
-display: flex;
-float: right;
-margin: 20px;
-width: 100%;
-place-items: right;
-}
-
-/*.iphone {
-display: flex;
-width: 100%;
-height: auto;
-/*transform: rotate(10deg);
-filter: drop-shadow(0 0 0.3rem #898084);
-}*/
+  .button{
+    background: white;
+    color: #ea4b6b;
+    padding: 1.25em 2.25em;
+    cursor: pointer;
+    font-size: 12px;
+  }
 
 
 #benefits  {
 margin-top: 3em;
+width: 100%;
 }
 .benefits-wrapper {
 display: flex;
-margin: 2em 0;
+flex-direction: column;
+margin: 2rem 0;
 }
-.title-container {
+.benefittitlecontainer {
   text-align: center;
-  font-size: 2.85em;
-  font-weight: 700;
-  color: #3c3c3c;
-
 }
+
 .benefit-container {
 margin: 20px;
 padding: 10px;
 padding-bottom: 30px;
 display: flex;
 flex-direction: column;
-flex: auto;
+flex: 1;
 text-align: center;
 box-shadow: 0 4px 21px -5px rgba(97, 97,97, 0.23);
 border-radius: 10px;
 line-height: 1.2;
-background-color: white;
-}
-
-.benefit-container > div {
-margin: 5px;
+background-color:#ffffff;
 }
 
 
 
+
+.icon-container {
+  margin-top: 1rem;
+}
 
 .icon {
-height: 35px;
+height: 70px;
 object-position: center;
-filter: drop-shadow(5px 5px rgb(238, 133, 140, 0.3));
+/*filter: drop-shadow(5px 5px rgb(238, 133, 140, 0.3));*/
 }
 
 .benefit-title {
-padding: 7px 0;
-font-size: 1.7em;
+
+font-size: 1.2rem;
 font-weight: 540;
 color: #4b4b4b;
 }
 
 
 .benefit-text {
-font-size: 1.3em;
+font-size: 1rem;
 color: #898084;
-padding: 7px 0;
 }
+
+#imagebreak{
+  background-image: linear-gradient(180deg,#f1f3f4,#fff 960px);
+  padding: 0 40px;
+}
+
+.imagebreakcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.imagebreakcontent{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.imageparagraph {
+  font-size: 1rem;
+  color: #898084;
+  line-height: 1.2;
+  margin: 1rem auto;
+}
+
+.vimaphone {
+margin-top: 2rem;
+width: 550px;
+max-width: 100%;
+}
+
+.border, .borderight {
+  width: 16%;
+  border: 3px solid #3FC1C9;
+}
+
 
 
 
 
 #feature-wrapper{
   text-align: center;
+  /*padding: 1rem;*/
+  margin: 3em auto;
 }
 
 
 
-/*.feature-container-left > div, .feature-container-right > div {
-margin: 5px;
-}*/
-
-
-
-
-/*display: flex;
-float: left;
-flex: auto;
-flex-direction: column;
-margin: 20px;
-/*border: 1px solid grey;
-width: 100%;
-text-align: right;
-line-height: 1.2;
-place-content: center center;
-}*/
-
-/*.image-wrapper {
-  display: flex;
-  flex: auto;
-  width: auto;
-}*/
-
-
-
-.feature-title {
-padding: 10px 0;
-color: #e9425e;
-font-size: 2.85em;
-  font-weight: 700;
-
+.feature {
+  margin-top: 3rem;
 }
 
 .feature-text {
-  font-size: 1.8em;
+  font-size: 1rem;
   color: #898084;
-  margin: 1em;
-  line-height: 1.2em;
+  line-height: 1.2;
+  margin: 1rem 0;
 }
 
-/* .header {
- padding: 10px 0;
- padding-left: 4px;
- height: 50px;
+.featurepic {
+  margin: 3em auto 0;
+  width: 300px;
+  max-width: 100%;
+}
+.buttoncontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.submit {
+  width: 150px;
+  background-color: #e9425e;
+  box-shadow: 0 4px 21px -5px rgb(233, 66, 94, 0.8);
+  padding: 15px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  border: none;
 }
 
-nav {
-    float:right;
+.wavewrapper {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   }
-
-.logo img {
-    float:left;
-    width: 90px;
   
+  #wavy {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
   }
 
-ul li{
-  display: inline-block; 
-  padding:10px;
-  font-size:20px; 
-}
-a {
-    text-decoration: none;
-    color: #4b4b4b;
-}
-
-a:hover{
-  border-bottom: 2px solid #e9425e;
-}
-.main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.blue {
-color: blue;
-}
-.cta, .iphone {
-display: inline-block;
-width: 400px;
-height: 600px;
-margin: 1px;
-}
-.mockup {
-  transform: rotate(10deg);
-}
-.container {
-  max-width: 1000px;
-  height: 600px;
-} */
-
-#footer-wrapper {
-  margin-top: 2em;
+footer {
   text-align: center;
-  background: rgb(226, 223, 225, 0.5)
+  background-color: #ee858c;
 }
-#ada6a9
-.text-wrapper {
-margin: 1em 0;
 
-}
 
 .footer-text {
-  font-size: 2.2em;
-  padding: 10px;
-  color: #3c3c3c;
+  font-size: 1.4rem;
+  /*padding: 10px;*/
+  color: white;
   font-weight: 500;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
 }
 
 .some-wrapper {
   display: flex;
   /* float: right; */
   display: flex;
-  justify-content: space-between;
-  margin-top: 3em;
+  justify-content: center;
+  margin-top: 2rem;
   padding-bottom: 30px;
 }
 
-.some-container {
+
+
+.some {
+width: 30%;
+height: auto;
+} 
+
+
+
+/*IPAD*/
+@media only screen and (min-width : 768px) {
+  #wave {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 62%;
+    z-index: -1;
+    filter: drop-shadow(50px 20px rgb(238, 133, 140, 0.3));
+    }
+  h1.title {
+    color: #364F6B;
+  }
+    #shape2 {
+      display: flex;
+      position: absolute;
+      top: 800px;
+      left: 45px;
+      z-index: -1;
+      width: 650px;
+    }
+
+  .border {
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .nav-top {
+    display: none;
+  }
+
+  nav.nav-top-desktop {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  #vima-logo {
+    width: 80px;
+    display: flex;
+  }
+  
+  #logowhite {
+    display: none;
+  }
+
+  .menu-item {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 25px;
+
+  }
+  
+.current, .menu-link {
+  color: white;
+}
+
+.title {
+  font-size: 2.6rem;
+}
+  
+  #cta-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 0 5%; */
+    text-align: left;
+    width: 100%;
+  }
+.cta-intro {
+  flex-basis: 60%;
+  color: #898084;
+}
+
+.cta-paragraph {
+  font-size: 1.6rem;
+  width: 450px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  max-width: 550px;
+  border: 8px solid white;
+  border-radius: 3em;
+  margin: 0;
+  margin-top: 3em;
+}
+
+.form-button{
+  justify-content: center;
+}
+.button {
+  border-radius: 3em;
+  margin-left: auto;
+  background: #ea4b6b;
+  color: white;
+  font-size: 12px;
+}
+
+.form-item:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+ }
+
+.form-item {
+  justify-content: center;
+  border-bottom: none;
+}
+
+.email {
+  flex-grow: 1;
+}
+
+/*.join {
+  background-color: #e9425e;
+  box-shadow: 0 4px 21px -5px rgb(233, 66, 94, 0.8);
+  color: white;
+}
+
+.modal-content {
+ 
+  width: 600px;
+}
+
+.name {
+  justify-content: center;
+}*/
+ 
+
+.benefits-wrapper {
+  display: flex;
+  flex-direction: row;
+  }
+.benefit-title {
+  min-height: 2.4rem;
+}
+
+h2 {
+font-size: 2.6rem;
+}
+
+#imagebreak {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imagebreakcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 0 40px;
+}
+
+.imagebreakcontent {
+  width: 500px;
+  flex-basis: 60%;
+  text-align: left;
+}
+
+.imageparagraph {
+  line-height: 1.2;
+  font-size: 1.6rem;
+}
+
+.wavewrapper{
+padding-top: 10rem;
+padding-bottom: 10rem;
+}
+
+#feature-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.feature {
+  text-align: right;
+}
+
+.submit {
+  margin-left: auto !important;
+}
+
+.borderight {
+  margin-right: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-title, .feature-text {
+  width: 350px;
+}
+
+.feature-text{
+  line-height: 1.2;
+  font-size: 1.6rem;
+}
+
+
+
+.featurepic {
+  width: 400px;
+}
 
 
 }
 
-.some {
-width: 20%;
-height: auto;
-} 
+@media only screen and (min-width : 900px) {
+  #wave {
+    width: 58%;
+  }
+}
+
+@media only screen and (min-width : 1078px) {
+
+#wave {
+  width: 58%;
+}
+}
+
+@media only screen and (min-width : 1500px) {
+
+}

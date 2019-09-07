@@ -4,102 +4,142 @@
         <title>Vima</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="./css/styles.css">
+				
     </head>
     <body> 
         <header id="header">
                 <img src="./img/Weird Shape-Vima.svg" id="wave">
-              <nav class="nav-top">
-                  <div class="nav-top-wrap">
-                      <div class="nav-top-left">
-                        <img id="vima-logo" src="./img/Vima_Logo.png">
-                      </div>
-                      <div class="nav-top-right-mobile"> 
-                        <span>MENU</span>
-                      </div>
-                  </div>
-                  <div class="nav-top-right">
-                    <ul class="nav-top-list">
-                        <li class="menu-item"><a href="#" class="current">Home</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">About</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Join</a></li>
-                    </ul>
-                  </div>
-              </nav>
-               <!--- <img src="./img/Weird Shape-Vima.svg" id="wave">-->
-           <!-- <div class="logo">
-                <img id="vima-logo" src="./img/Vima_Logo.png">
-            </div>
-            <nav class="menu">
-                <div id="menu-icon"> 
-                    <span class="text" >MENU</span>
-                </div>
-                <ul class="menu-list">
+              <nav class="nav-top content">
+								<div class="nav-top-container">
+									<div class="nav-top-left-mobile">
+										<img id="vima-logo" src="./img/Vima_Logo.png">
+										<img id="logowhite" src="./img/logowhite.png">
+									</div>
+									<div class="nav-top-right-mobile"> 
+										<span>MENU</span>
+									</div>
+								</div>
+                  <ul class="nav-top-list">
                     <li class="menu-item"><a href="#" class="current">Home</a></li>
                     <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
                     <li class="menu-item"><a class="menu-link" href="#">About</a></li>
                     <li class="menu-item"><a class="menu-link" href="#">Join</a></li>
-                </ul>
-            </nav>  -->    
-        </header>
-        <main class="main-container">
-            <section id="cta-wrapper">
-                <!---- <div class="cta-container-left">-->
-                    <h1 class="cta-title">Lorem ipsum dolor sit amet consectetur</h1>
-                    <p class="cta-paragraph">Laudantium nemo deserunt officiis, saepe voluptas quibusdam ipsam accusamus quisquam exercitationem?</p>
-                    <button class="cta-button" type="button">Submit</button>
-                <!----</div>-->
-                 <!---- <div class="cta-container-right">
-                   <figure><img class="iphone" srcset="./img/iphone.png"></figure>
-                </div>-->
-            </section>
-            <div class="device">
-                <figure>
-                    <img srcset="./img/iphone.png" alt="The Vima app on a black Iphone">
-                </figure>
-            </div>
-            <section id="benefits">
-                <div class="title-container">
-                  <h2>Benefits</h2>
+                  </ul>
+              </nav>
+              <nav class="nav-top-desktop content">
+                    <div class="nav-top-left">
+												<img id="vima-logo" src="./img/Vima_Logo.png">
+										</div>
+										<div>
+                      <ul class="menu">
+                        <li class="menu-item"><a href="#" class="current">Home</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">About</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Join</a></li>
+                      </ul>
+                    </div>
+              </nav>  
+				</header>
+        <main>
+            <section id="cta-wrapper" class="content">
+                <div class="cta-intro">
+                    <h1 class="title">Curate your own TV</h1>
+										<hr class="border">
+										<p class="cta-paragraph">A curated TV Platform featuring handpicked content based on your personal interest</p>
+										<form action="#" class="form">
+												<div class="form-item">
+													<input type="text" class="form-input" 
+													placeholder="first name" aria-label="first name">
+												</div>
+												<div class="form-item email" >
+													<input type="email" class="form-input" 
+													placeholder="email" aria-label="email">
+												</div>
+												<div class="form-button">
+													<button class="button" type="submit">Join</button>
+												</div>
+											</form>	
+									</div>
+                <div>
+                    <figure>
+                        <img class="device" srcset="./img/iPhone8.png" alt="The Vima app on a white Iphone">
+                    </figure>
+                </div>
+						</section>
+            <section id="benefits" class="content">
+                <div class="title benefittitlecontainer">
+									<h2>Why use Vima as a streaming platform?</h2>
                 </div>
                 <div class="benefits-wrapper">
                     <div class="benefit-container">
-                        <div class="icon-container"><img class="icon" src="./img/icon.png"></div>
-                        <div class="benefit-title">Premium content</div>
-                        <div class="benefit-text">dummy text explaining the benefits </div>
+                        <div class="icon-container"><img class="icon" src="./img/iconworld.png"></div>
+                        <div class="benefit-title">International</div>
+                        <div class="benefit-text">Find entertainement from France, <br> UK, and Sweden.</div>
                     </div>
                     <div class="benefit-container">
-                        <div class="icon-container"><img class="icon" src="./img/icon.png"></div>
-                        <div class="benefit-title">Pay per view</div>
-                        <div class="benefit-text">dummy text explaining the benefits </div>
+                        <div class="icon-container"><img class="icon" src="./img/iconmovie.png"></div>
+                        <div class="benefit-title">Personalized channels</div>
+                        <div class="benefit-text">Build your own curated channels.</div>
                     </div>
                     <div class="benefit-container">
-                        <div class="icon-container"><img class="icon" src="./img/icon.png"></div>
-                        <div class="benefit-title">Content creators</div>
-                        <div class="benefit-text">dummy text explaining the benefits </div>
+                        <div class="icon-container"><img class="icon" src="./img/iconfree.png"></div>
+                        <div class="benefit-title">Freemium</div>
+                        <div class="benefit-text">Watch for free, or access more <br> through premium service</div>
                     </div>
                 </div>
-            </section>
-            <section id="feature-wrapper">   
-                <h2 class="feature-title">Discover independant film</h2>
-                <p class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vero consequatur ex dicta pariatur quibusdam, culpa sae.</p>
-            </section>
-            <!--<div class="device">
-                <figure<>
-                   <img class="feature-image-right" src="./img/iphone.png">
-                </figure>
-            </div>-->
-      </main>
-        <footer id="footer-wrapper">
-             <div class="text-wrapper">
-                 <p class="footer-text">Get in touch. Say Hello!</p>
-             </div>
-             <div class="some-wrapper">
-                <div class="some-container"><img  class="some" src="./img/instagram.png"></div>
-                <div class="some-container"><img  class="some" src="./img/facebook.png"></div>
-                <div class="some-container"><img  class="some" src="./img/twitter.png"></div>
-            </div>  
-        </footer>
+						</section>
+						<div>
+								<img src="./img/Shape2.svg" id="shape2">
+						</div>
+						<section id="imagebreak">
+							<div class="imagebreakcontainer">
+								<div class="imagebreakcontent">
+									<h2 class="title">Fun, simple, and efficient</h2>
+									<hr class="border">
+									<p class="imageparagraph">Vima is a fun way to watch and discover movies, sports, documentaries etc</p>
+								</div>
+								<figure>
+									<img class="vimaphone" srcset="./img/vimaimage.svg" alt="The Vima app">
+								</figure>
+							</div>
+						</section>
+            <section id="feature-wrapper" class="content">  
+								<div>
+									<figure>
+										<img class="featurepic" src="./img/featurepic.svg">
+									</figure>
+								</div>
+								<div class="feature">
+									<h2 class="title">Join Vima</h2>
+									<hr class="borderight">
+									<p class="feature-text">Join today and start curating your own channels</p>
+									<div class="buttoncontainer">
+									<button class="submit" type="button">Join now</button>
+									</div>
+								</div> 
+						</section>
+						<div class="wavewrapper">
+								<svg id="wavy"  viewBox="0 0 1920 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g id="Landing-page" transform="translate(0.000000, -4325.000000)" fill="#ee858c">
+											<g id="Get-a-quotation" transform="translate(-301.000000, 4325.000000)">
+													<path fill="#ee858c" d="M218.162393,93.2510709 C240.505113,1.9712505 347.469448,-21.6639384 482.999124,19.5684333 C618.528799,60.8008049 581.556163,196.389203 720.154562,215.644931 C858.752962,234.900659 821.117226,150.780558 922.499456,139.794046 C1023.88169,128.807533 1019.14017,206.03491 1176.06356,188.67797 C1332.98695,171.321031 1359.13392,61.0192426 1566.92164,68.0483348 C1774.70936,75.0774269 1866.4913,174.077204 1973.23668,215.644931 C2044.40026,243.356749 2134.36765,218.07312 2243.13883,139.794046 C2616.28706,559.731716 2616.28706,876.578902 2243.13883,1090.3356 C1683.4165,1410.97065 674.401843,1368.56248 209.383995,1090.3356 C-255.633853,812.108725 195.819673,184.530891 218.162393,93.2510709 Z" id="Path-2"></path>
+											</g>
+									</g>
+							</svg>
+						</div>
+			</main>
+	
+        <footer id="footer-wrapper content">
+						<div class="text-wrapper">
+								<p class="footer-text">Get in touch. Say Hello!</p>
+							<div class="some-wrapper">
+								<div class="some-container"><img  class="some" src="./img/instagram.png"></div>
+								<div class="some-container"><img  class="some" src="./img/facebook.png"></div>
+								<div class="some-container"><img  class="some" src="./img/twitter.png"></div>
+							</div>
+						</div>
+				</footer>
+			<script src="./new-js/script.js"></script>
     </body>
 </html>

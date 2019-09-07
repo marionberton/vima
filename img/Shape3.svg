@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="122px" height="75px" viewBox="0 0 122 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-36.3497804%" y1="37.2963921%" x2="113.696262%" y2="57.8567126%" id="linearGradient-1">
+            <stop stop-color="#EBACFF" offset="0%"></stop>
+            <stop stop-color="#FF8AC0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1059.57098,1178.62941 L1121.80981,1191.07718 L1138.40631,1187.18734 C1142.27123,1186.2815 1144.67003,1182.41404 1143.76419,1178.54913 C1142.85835,1174.68422 1138.99089,1172.28541 1135.12598,1173.19125 C1131.87625,1173.95291 1129.57846,1176.8515 1129.57846,1180.1893 C1129.57846,1180.1893 1129.57846,1180.1893 1129.57846,1180.1893 C1129.57846,1181.40989 1134.33088,1186.82377 1143.83571,1196.43095 L1143.83568,1196.43098 C1146.03543,1198.65441 1146.01623,1202.2401 1143.79279,1204.43985 C1142.73253,1205.48881 1141.30127,1206.07718 1139.80981,1206.07718 C1139.80981,1206.07718 1139.80981,1206.07718 1139.80981,1206.07718 C1125.16782,1206.07718 1106.71509,1210.56324 1084.45161,1219.53537 L1084.45161,1219.53538 C1073.26774,1224.04245 1060.5477,1218.62984 1056.04063,1207.44596 C1055.87376,1207.0319 1055.71963,1206.61281 1055.57846,1206.1893 C1055.57846,1206.1893 1055.57846,1206.1893 1055.57846,1206.1893 C1054.23641,1202.16313 1052.47879,1196.31902 1050.30563,1188.65696 L1050.30563,1188.65696 C1049.10004,1184.40635 1051.56852,1179.98322 1055.81913,1178.77763 C1057.04028,1178.43128 1058.32631,1178.38048 1059.57098,1178.62941 Z" id="path-2"></path>
+        <filter x="-25.7%" y="-42.6%" width="151.3%" height="201.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Board-view" transform="translate(-1036.000000, -1164.000000)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>
