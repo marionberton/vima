@@ -20,5 +20,16 @@ const menu=document.querySelector ('.nav-top-right-mobile');
     })            
   }
 
+    //Click event to scroll to top
+    $(".scrollToTop").click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+       
+    });
 
-  
+    //Scroll trigger the div to fade in
+    $(window).scroll( function(){
+      $('.benefit-container').each( function(i){  
+       $(this).animate({'opacity':'1'}, 2000);  
+      }); 
+  });
+

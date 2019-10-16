@@ -228,6 +228,7 @@ box-shadow: 0 4px 21px -5px rgba(97, 97,97, 0.23);
 border-radius: 10px;
 line-height: 1.2;
 background-color:#ffffff;
+opacity: 0;
 }
 
 
@@ -337,6 +338,13 @@ max-width: 100%;
   font-weight: 600;
   margin: 2rem 0;
   border: none;
+}
+
+.scrollToTop {
+  text-decoration: none;
+  text-align: center;
+  font-size: inherit;
+  text-transform: uppercase;
 }
 
 .wavewrapper {
